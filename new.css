@@ -1,0 +1,355 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+* {
+	font-synthesis: weight !important;
+}
+
+.Dashboard svg {
+	filter: none;
+}
+
+/* .Widget, .Slot {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px !important;
+	left: 0px !important;
+} */
+
+.Widgets .container .Slot > * {
+	margin: 0px !important;
+}
+
+.Overlay > a:nth-child(1) {
+	color: #fff !important;
+}
+.Overlay {
+	top: 160px !important;
+	right: 280px !important;
+	left: unset;
+	z-index: 99999;
+}
+.Overlay:hover {
+	background-color: #ff8ba1;
+}
+.Overlay:hover svg {
+	color: #e8004c !important;
+}
+i {
+	vertical-align: baseline;
+}
+
+/* --------------------- TODO LIST --------------------- */
+
+.Todo {
+	display: flex;
+	color: #000;
+	max-height: 80vh;
+	max-width: 580px;
+	width: max-content;
+	font-family: test thing;
+	font-size: 28px;
+	position: absolute;
+	left: -375px;
+	top: -270px;
+	/*! overflow-y: -moz-hidden-unscrollable; */
+	align-items: first baseline;
+}
+
+.TodoList {
+	display: flex;
+	flex-direction: column;
+	background-color: #00f7ef;
+	width: 450px;
+	min-height: 120px;
+	max-height: 100vh;
+	max-width: 480px;
+	border-radius: 11px 0px 20px 11px;
+	padding: 10px 13px 5px 10px;
+	margin: 0px;
+	/*! overflow: hidden;
+	text-overflow: ellipsis; */
+}
+
+.TodoItem {
+	height: 32px;
+	align-self: start;
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.TodoItem span {
+	display: inline-flex;
+	max-height: 33px;
+	font-size: 28px;
+	position: relative;
+	top: -7px;
+	text-overflow: ellipsis;
+	max-width: 390px;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.TodoItem a:hover {
+	color: #fff !important;
+}
+.TodoItem a, .TodoItem a:hover {
+	display: inline-block;
+	margin: 0px 10px 0px 5px;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.1s;
+	/*! position: relative; */ /*! top: 0px; */
+}
+.TodoItem a.complete:hover {
+	color: #000 !important;
+}
+
+.TodoItem a i svg, .TodoItem a > i, .TodoItem a {
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	vertical-align: unset !important;
+}
+.TodoItem svg {
+	stroke-width: 2;
+}
+.TodoItem i {
+	position: relative;
+	top: 0px;
+}
+
+	/* the other stuff™ */
+
+.Todo > div:nth-child(2) a i svg {
+	width: 37px;
+	height: 37px;
+}
+.Todo > div:nth-child(2) {
+	display: inline-flex;
+	flex-direction: column;
+	background-color: #00f7ef;
+	height: -moz-available;
+	max-width: 150px;
+	padding: 5px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	position: absolute;
+	top: 0px;
+	left: 450px;
+	width: max-content;
+}
+.TodoInput input {
+	display: inline;
+	border: 2.5px solid #000;
+	position: relative;
+	
+}
+
+	/* --- grow-spin plus --- */
+
+@keyframes growspin {
+	0% {transform: scale(1,1)}
+	5% {transform:scale(1.5,1.5)rotate(180deg)}
+	50% {transform:scale(3,3)rotate(360deg)}
+	/*65% {transform:scale(1.5,1.5) rotate(580deg)} */
+	95% {transform:scale(1,1) rotate(720deg)}
+	100% {transform:rotate(1080deg)}
+}
+
+.TodoInput a i svg:hover {
+	animation-name: growspin;
+	animation-duration: 0.8s;
+}
+
+/*--------------------- MESSAGE! --------------------- */
+
+.Message {
+	background-color: #ff306a;
+	color: #000;
+	max-width: 260px;
+	max-height: -moz-min-content;
+	border-radius: 7px;
+	padding: 10px;
+	font-family: spring is coming;
+	font-size: 50pt !important;
+	text-align: center;
+	position: absolute;
+	right: -515px;
+	top: -100px;
+	word-wrap: anywhere;
+	box-sizing: content-box;
+	border: 0.1px solid transparent;
+	transition: all 0.2s linear;
+	padding-top: 20px;
+	-webkit-text-stroke-color: transparent;
+	-webkit-text-stroke-width: 1px;
+}
+
+
+.Message:hover {
+	border: 5px solid pink;
+	transition: all 0.2s linear;
+	right: -517px;
+	-webkit-text-stroke-color: #fff;
+	-webkit-text-stroke-width: 1.5px;
+}
+.Message h3 {
+	white-space: pre-wrap !important;
+	min-width: 200px;
+	line-height: 0.9;
+	font-size: unset !important;
+}
+
+.Message h3::selection {
+	background-color: #99005e;
+	color: #fff;
+	-webkit-text-stroke-color: #000 !important;
+}
+
+/* --------------------- LINKS --------------------- */
+
+.Links {
+	background-color: #00c520;
+	color: #000 !important;
+	border-radius: 9px;
+	padding: 6px;
+	padding-right: 10px;
+	padding-top: 10px;
+	margin: 0px auto;
+	width: 190px;
+	font-family: "nymph's handwriting";
+	font-size: 23px;
+	line-height: 7px !important;
+	text-align: start !important;
+	position: absolute;
+	top: -10px;
+	left: 10px;
+	word-wrap: break-word;
+	word-break: break-word;
+	display: flex;
+	flex-direction: column;
+}
+.Links a {
+	display: inline-flex;
+	width: 186px;
+	height: auto;
+	padding-left: 20px;
+	margin: 2px 0px;
+	position: relative;
+	top: -5px;
+	left: -14px;
+	white-space: revert;
+	text-indent: -1px;
+	line-height: 0.9;
+	box-sizing: border-box;
+	align-items: center;
+	align-content: center;
+}
+
+.Links i {
+	/*! display: inline-flex; */
+	position: absolute;
+	/*! top: -1px; */
+}
+.Links i, .Links i > svg {
+	position: relative;
+	display: flex;
+	width: 20px;
+	height: 20px;
+	margin-right: 8px !important;
+	text-indent: 0px !important;
+	align-content: start;
+	align-self: center;
+	line-height: 0.9;
+	top: 1.5px;
+}
+.Links i > svg {
+	text-indent: 0px;
+	display: inline-block;
+}
+.Links a:hover {
+	color:#cfff9e;
+}
+/* .Links > a:nth-child(1) > i:nth-child(1) {
+	position: relative;
+	top: 2px
+} */
+
+.Links a:hover i {
+	color: #000 !important;
+}
+a:hover {
+	text-decoration: none !important;
+}
+
+
+/* --------------------- TIME --------------------- */
+
+.Time {
+	background-color: #000;
+	width: 360px;
+	height: 170px;
+	border-radius: 10px;
+	padding: 15px;
+	color: #fff;
+	font-family: avoids dislikes;
+	font-weight: normal !important;
+	text-align: end;
+	position: relative;
+	top: 35px;
+	right: 15px;
+	cursor: default;
+	-moz-user-select: none;
+	border: 3px solid #8ceaff;
+}
+.Time.Digital {
+	display: block;
+	background-color: transparent !important;
+	padding: 0px;
+	position: relative;
+	top: 0px !important;
+	font-size: 12pt;
+	height: auto;
+	width: -moz-available;
+	left: 0px;
+	border: none;
+}
+.Time hr {
+	background-color: #fff;
+	height: 2px;
+	border-radius: 1310px 0px 0px 7px;
+	border: none !important;
+}
+.Time h3 {
+	font-family: fall is coming;
+	font-weight: normal;
+	font-size: 48px;
+}
+.Time h1 {
+}
+.Time > * {
+	position: relative;
+}
+
+/* --------------------- SEARCH BOX --------------------- */
+.Search {
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: -260px;
+	background-color: #003375d9;
+	width: 350px;
+	padding-right: 10px;
+	border-radius:8px;
+	border: 3px solid #000;
+}
+.Search input {
+	margin: 0px !important;
+	padding: 2px 0px;
+	border-bottom: none !important;
+	text-align: end;
+	font-family: Angeltoes;
+	font-size: 30px;
+	color: #fff;
+	display: inline;
+	vertical-align: baseline;
+}
