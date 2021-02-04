@@ -52,7 +52,7 @@ import {
 	X as Z,
 	Y as J
 }
-	from '//songsterr.com/static/preact.14f0a75b.js';
+	from '//www.songsterr.com/static/preact.14f0a75b.js';
 var K = {
 	f: t
 },
