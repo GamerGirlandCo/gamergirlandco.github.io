@@ -52,7 +52,7 @@ import {
 	X as Z,
 	Y as J
 }
-	from './preact.14f0a75b.js';
+	from '//songsterr.com/static/preact.14f0a75b.js';
 var K = {
 	f: t
 },
@@ -6421,11 +6421,11 @@ class ji {
 	}
 }
 async function $i(t) {
-	if (t.get().user.hasPlus) return import('./playerPlus.c4f11aa0.js')
+	if (t.get().user.hasPlus) return import('//www.songsterr.com/static/playerPlus.c4f11aa0.js')
 }
 async function Fi(t) {
 	const e = t.get();
-	if (e.demo.enabled && 27 === e.data.songId) return import('./playerDemo.17956f3a.js')
+	if (e.demo.enabled && 27 === e.data.songId) return import('//www.songsterr.com/playerDemo.17956f3a.js')
 }
 function Hi(t, e) {
 	t('player/changeLoop', e)
@@ -6804,7 +6804,7 @@ const Gi = {
 			t.on('user/signOut', (e => {
 				!async function (t) {
 					try {
-						(await import('./playerPlus.c4f11aa0.js')).plusRestoreDefaults(t)
+						(await import('//www.songsterr.com/static/playerPlus.c4f11aa0.js')).plusRestoreDefaults(t)
 						//
 					} catch (t) {
 						console.error(t)
