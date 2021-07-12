@@ -2896,7 +2896,7 @@ class Se {
     }
 }
 async function Ce(t) {
-    if (t.get().user.hasPlus) return import("./playerPlus.3bcb41a5.js");
+    if (true) return import("./playerPlus.3bcb41a5.js");
 }
 async function ke(t) {
     const e = t.get();
