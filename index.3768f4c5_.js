@@ -8651,7 +8651,7 @@ const Zo = f((t, e) => {
     );
 });
 function Ko(t) {
-    const e = "plus" === t.plan.toLowerCase() ? "PLUS" : "FREE",
+    const e = true,
         s = t.subscription || null,
         n = "lifetime" === t.sra_license,
         i = !!s && s.isPayPal,
@@ -21779,11 +21779,11 @@ const Ih = t => {
     Eh = () => ({
         user: {
             profile: null,
-            hasPlus: !1,
+            hasPlus: true,
             hasSubscription: !1,
-            isAdmin: !1,
+            isAdmin: true,
             isModerator: !1,
-            isLoggedIn: !1,
+            isLoggedIn: false,
         },
     });
 function Ph(t, e) {
