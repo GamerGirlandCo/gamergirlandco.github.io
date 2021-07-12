@@ -17,7 +17,7 @@ import {
     s as g,
     x as f,
     q as y,
-} from "./preact.9cb2fa7a.js";
+} from "//www.songsterr.com/static/preact.9cb2fa7a.js";
 var v = {
     app: "C3rr3",
     tablature: "C3r160",
