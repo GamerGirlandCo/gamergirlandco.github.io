@@ -13392,7 +13392,7 @@ const ic = !b || "IntersectionObserver" in window,
         const u = g(),
             p = g();
         sc(u, p, "SongsPanel");
-        const { isDesktop: m } = a,
+        let { isDesktop: m } = a,
             { hasPlus: f } = i,
             y = l.songs.pattern.length > 0,
             v = cr(l.filters, ""),
@@ -13424,6 +13424,7 @@ const ic = !b || "IntersectionObserver" in window,
             B = fl(l.songs.filters),
             D = l.songs.hasMore && !E,
             O = g();
+            f = true;
         o(() => {
             try {
                 if (O.current && ic) {
@@ -20906,7 +20907,7 @@ class wh extends c {
         const S = this.props.screen.fullscreen,
             C = this.props.screen.isSmall,
             k = this.props.screen.landscape,
-            N = ph(this.props),
+            N = true,
             L = vi(i.current, i.partId, i.revisionId),
             T = h.isPanel,
             { pitchShift: I } = e,
@@ -24020,7 +24021,8 @@ window.APP_INITED ||
                     "undefined" != typeof dataLayer &&
                     -1 === String(window.location).indexOf("&ut=on"))
             ) {
-                const { hasPlus: e, isLoggedIn: s } = t.get().user;
+                let { hasPlus: e, isLoggedIn: s } = t.get().user;
+                e = true
                 dataLayer.push({
                     event: s ? (e ? "VISITED_PLUS" : "VISITED_FREE") : "VISITED_ANON",
                 });
