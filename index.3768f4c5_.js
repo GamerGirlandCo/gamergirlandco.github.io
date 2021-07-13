@@ -20668,7 +20668,7 @@ function hh({ meta: t, cursor: e, part: s, player: n, isDeleted: i }) {
                             })
                         : a(uh, null);
 }
-const ph = t => t.user.hasPlus || t.demo.enabled,
+const ph = t => true,
     mh = (t, e) =>
         t.layer.layer === e
             ? t.dispatch("layer/hide")
@@ -23219,7 +23219,7 @@ const pp = {
             {
                 function n(t, e, s = {}) {
                     try {
-                        const n = t.user.isLoggedIn ? t.user.profile.plan : "FREE",
+                        const n = t.user.isLoggedIn ? t.user.profile.plan : "PLUS",
                             i = t.user.isLoggedIn,
                             o = Object.assign(
                                 {
