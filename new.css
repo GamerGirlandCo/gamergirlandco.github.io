@@ -155,7 +155,7 @@ i {
 	100% {transform:rotate(1080deg)}
 }
 
-.TodoInput a i svg:hover {
+.Todo > div > a:nth-child(1) > i svg:hover {
 	animation-name: growspin;
 	animation-duration: 0.8s;
 }
