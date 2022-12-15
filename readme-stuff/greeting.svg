@@ -2,6 +2,7 @@
     <foreignObject height="100%" width="100%">
       <div xmlns="http://www.w3.org/1999/xhtml">
         <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="https://gamergirlandco.github.io/solarized-dark.min.css"/>
+        
         <style>
           @font-face {
     font-family: 'Aesthetik Script';
