@@ -1,6 +1,7 @@
 <svg fill="none" xmlns="http://www.w3.org/2000/svg">
     <foreignObject width="100%" height="100%">
-        <div xmlns="http://www.w3.org/1999/xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="https://gamergirlandco.github.io/solarized-dark.min.css"/>
           <style>
             @import url("https://gamergirlandco.github.io/solarized-dark.min.css")
           </style>
